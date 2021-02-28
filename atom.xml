@@ -1,63 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
+  <title>Wait &amp; Hope</title>
   
-  
+  <subtitle>All human wisdom is summed up in these two words</subtitle>
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-02-14T23:50:51.942Z</updated>
+  <updated>2021-02-28T22:17:19.352Z</updated>
   <id>http://example.com/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>Jiajie Lu</name>
     
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>archives</title>
-    <link href="http://example.com/2021/02/14/archives/"/>
-    <id>http://example.com/2021/02/14/archives/</id>
-    <published>2021-02-14T23:50:51.000Z</published>
-    <updated>2021-02-14T23:50:51.942Z</updated>
+    <title>Several Examples of the Application on Optimal Control</title>
+    <link href="http://example.com/2021/02/28/AssForDP/"/>
+    <id>http://example.com/2021/02/28/AssForDP/</id>
+    <published>2021-02-28T22:02:02.000Z</published>
+    <updated>2021-02-28T22:17:19.352Z</updated>
     
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>test_page</title>
-    <link href="http://example.com/2021/02/14/test-page/"/>
-    <id>http://example.com/2021/02/14/test-page/</id>
-    <published>2021-02-14T23:27:56.000Z</published>
-    <updated>2021-02-14T23:27:56.924Z</updated>
-    
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://example.com/2021/02/14/hello-world/"/>
-    <id>http://example.com/2021/02/14/hello-world/</id>
-    <published>2021-02-14T23:22:19.254Z</published>
-    <updated>2021-02-14T23:22:19.254Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre><code class="bash">$ hexo new &quot;My New Post&quot;</code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre><code class="bash">$ hexo server</code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre><code class="bash">$ hexo generate</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code class="bash">$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    <content type="html"><![CDATA[<p>I have taken the course <strong><em>MA 661 Dyn. Prog. &amp; Rein. Lern</em></strong> in 2020 spring. Only theoretical study may not be straightforward to understand all the concepts. I have modified the homework solution and posted to the <a href="https://github.com/ranpo0908/DynamicProgramming">github</a>.  For the sake of convenience, I put the hyperlink in my blog making further search more easily.</p><ul><li><a href="https://github.com/ranpo0908/DynamicProgramming/blob/main/ass01/Assignment01.ipynb"><strong>Assignment 01</strong> <em>Finite Horizon Deterministic System</em></a></li><li><a href="https://github.com/ranpo0908/DynamicProgramming/blob/main/ass02/Assignment02.ipynb"><strong>Assignment 02</strong> <em>Finite Horizon Stochastic System</em></a></li><li><a href="https://github.com/ranpo0908/DynamicProgramming/blob/main/ass03/Assignment03.ipynb"><strong>Assignment 03</strong> <em>Equipment Replacement Problem</em></a></li></ul>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
+    <summary type="html">&lt;p&gt;I have taken the course &lt;strong&gt;&lt;em&gt;MA 661 Dyn. Prog. &amp;amp; Rein. Lern&lt;/em&gt;&lt;/strong&gt; in 2020 spring. Only theoretical study may not be st</summary>
       
     
     
+    
+    <category term="Notes" scheme="http://example.com/categories/Notes/"/>
+    
+    <category term="Dynamic Programming &amp; Reinforcement Learning" scheme="http://example.com/categories/Notes/Dynamic-Programming-Reinforcement-Learning/"/>
     
     
   </entry>
