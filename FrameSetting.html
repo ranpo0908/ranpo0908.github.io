@@ -1,21 +1,202 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Frame Setting</title>
+<!---Stylesheet for font awesome and CSS--->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="layout/css/frame_css.css">
+
+<!---CSS fonts with external links--->
+<style>
+/* header part of which 
+background is a pic in assets/img */
+.header
+{
+    padding: 30px;
+    text-align: center;
+    background: url("assets/img/galaxy.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Change block color*/
+a.active {
+  color: white;
+  background-color: #04AA6D;
+}
+
+/* table css*/
+table.center
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Art Letter Font*/
+@font-face
+{
+    font-family: rochregu;
+    src: url("layout/font/roch_regu.ttf");
+}
+
+@font-face
+{
+    font-family: arivio;
+    src: url("layout/font/AriVio.ttf");
+}
+
+.arthead
+{
+    font-family: rochregu;
+    color: white;
+}
+
+.artintro
+{
+    font-family: arivio;
+}
+</style>
 </head>
-<frameset rows="10%,75%,15%" frameborder="no" scrolling="no">
-     <frame src="Top.html" frameborder = "no" scrolling="no" noresize/>
-     <frameset cols="325px,*" >
-         <frame src="Bottom_Left.html" frameborder = "no" scrolling="no" noresize/>
-         <!--<frameset rows="*,170px">--->
-             <frame src="Bottom_Right.html" frameborder = "no"scrolling="yes"  noresize/>
-             <!---<frame src="Bottom.html" frameborder = "no"scrolling="yes"  noresize/>--->
-         </frameset>
-    <frame src="Bottom.html" frameborder = "no"scrolling="yes"  noresize/>
-</frameset>
-<!---</frameset><noframes></noframes>--->
 
 <body>
+<!---Head part--->
+<div class="header">
+    <!---Art Letter header--->
+    <div>
+        <h1 class="arthead">Wait & Hope</h1>
+    </div>
+</div>
+<!---Navi Bar Horizon--->
+<div class="topnav">
+    <a class="active">Home</a>
+    <a href="assets/files/JiajieLu_resume.pdf" style="float:right">CV</a>
+    <a href="#" style="float:right">Files</a>
+</div>
+<!--- Container for columns--->
+<div class="row">
+    <!---Container for left columns--->
+    <div class="leftcolumn">
+        <!--- Cards in left column--->
+        <div class="card">
+<!--- Self Introduction Part --->
+<h1>About Me</h1>
+<hr width = 775px align = "left"/> 
+<p> <font size = "4.5">
+I am currently a PhD student at Stevens Institute of Technology. My interested fields are mathematical statistics, stochastic optimization, stochastic ordering and data science.
+</font></p>
+
+<h1>Education</h1>
+<hr width = 775px align = "left"/> 
+<table style="width:100%">
+    <tr>
+        <td>
+            <img src = "assets/img/stevens.png", width = 100px height = 100px style = "float:left"/>
+            <div style = "float:left">
+            <font size = "1"><br/></font><font size = "5" face = "Times New Roman">&ensp;
+                Stevens Institute of Technology, New Jersey, US<br/></font> 
+            <font size = "4.5">&ensp;&ensp;August 2021 - present<br/>&ensp;&ensp;PhD. in Applied Mathematics</font></div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <img src = "assets/img/stevens.png", width = 100px height = 100px style = "float:left"/>
+            <div style = "float:left">
+            <font size = "1"><br/></font><font size = "5" face = "Times New Roman">&ensp;
+                Stevens Institute of Technology, New Jersey, US<br/></font> 
+            <font size = "4.5">&ensp;&ensp;August 2019 - May 2021<br/>&ensp;&ensp;M.S. in Applied Mathematics</font></div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <img src = "assets/img/shnu.png", width = 100px height = 100px style = "float:left"/>
+            <div style = "float:left">
+            <font size = "1"><br/></font><font size = "5" face = "Times New Roman">&ensp;
+                Shanghai Normal University, Shanghai, China<br/></font> 
+            <font size = "4.5">&ensp;&ensp;September 2014 - June 2018<br/>&ensp;&ensp;B.S. in Statistics</font></div>
+        </td>
+    </tr>
+</table>
+
+
+<h1>Skills</h1>
+<hr width = 775px align = "left"/> 
+<p> <font size = "4.5">C/C++, MATLAB, Python, Java, Mathematica, HTML; 
+Linux, Origin Lab, Qt Creator (GUI), LaTeX;<br/>Point Cloud Library(PCL), Caffe(Machine Learning), Spyder; 
+Numpy, Scikit-learn/image, Matplotlib</font></p>
+
+<h1>Projects</h1>
+<hr width = 775px align = "left"/> 
+<p> <font size = "4.5">Waiting for updated.</font></p>
+<!---End of Self Intro--->
+        </div>
+    </div>
+    <!--- Container for right columns --->
+    <div class="rightcolumn">
+        <!--- Card1:Selfie in right column--->
+        <div class="card">
+<!---Starting of SelfIntro--->
+            <table class="center">
+            <tr>
+                <th colspan="3">
+                    <img src="assets/img/selfie2.jpg", alt="Avatar" width="150" height="150">
+                </th>
+            </tr>
+            <tr>
+                <th colspan="3"><h2>Jiajie Lu</h2></th>
+            </tr>
+            <tr>
+                <th>
+                    <a href="https://www.linkedin.com/in/jiajie-lu-012ab3206">
+                        <i class="fa fa-linkedin fa-lg"></i>
+                    </a>
+                </th>
+                <th>
+                    <a href="https://github.com/ranpo0908">
+                        <i class="fa fa-github-square fa-lg"></i>
+                    </a>
+                </th>
+                <th>
+                    <a href="https://twitter.com/Ranpo_Loo">
+                        <i class="fa fa-twitter-square fa-lg"></i>
+                    </a>
+                </th>
+            </tr>
+            <tr>
+                <th colspan="3">
+                    <p class="artintro">Present Student - Future Scientist</p>
+                </th>
+            </tr>
+            </table>
+<!---Ending of SelfIntro--->
+        </div>
+        <!--- Card2: Position Anchor in right column--->
+        <div class="card">
+<!---Starting of Position Anchor--->
+<!---Ending of Position Anchor--->
+        </div>
+        <!---Card3: Contact me --->
+        <div class="card">
+<!---Starting of Contact me--->
+            <h3>Contact Me</h3>
+            <table class="center">
+                <tr>
+                    <th><i class="fa fa-map-marker"></i></th>
+                    <td>Hoboken, NJ, US</td>
+                </tr>
+                <tr>
+                    <th><i class="fa fa-envelope"></i></th>
+                    <td>leolu19950908@gmail.com</td>
+                </tr>
+                <tr>
+                    <th><i class="fa fa-paper-plane"></i></th>
+                    <td>jlu26@stevens.edu</td>
+                </tr>
+            </table>
+<!---Ending of Contact me--->
+        </div>
+    </div>
+</div>
+
+
 </body>
+
 </html>
