@@ -47,6 +47,25 @@ body {
   clear: both;
 }
 
+/*left right for mobile*/
+.leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Responsive layout - 
+when the screen is less than 800px wide, 
+make the two columns stack on top of 
+each other instead of next to each other */
+@media screen and (min-width: 800px) 
+{
 /* Create two unequal columns that floats next to each other */
 /* Left column */
 .leftcolumn {   
@@ -61,23 +80,6 @@ body {
   background-color: #f1f1f1;
   padding-left: 20px;
 }
-
-/* Add a card effect for articles */
-.card {
-  background-color: white;
-  padding: 20px;
-  margin-top: 20px;
-}
-
-/* Responsive layout - 
-when the screen is less than 800px wide, 
-make the two columns stack on top of 
-each other instead of next to each other */
-@media screen and (max-width: 800px) {
-  .leftcolumn, .rightcolumn {   
-    width: 100%;
-    padding: 0;
-  }
 }
 
 /* Responsive layout - when the screen is less than 400px wide, 
