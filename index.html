@@ -1,216 +1,175 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-<link rel="manifest" href="favicon/site.webmanifest">
-<title>Jiajie Lu's Home Page</title>
-<!---Stylesheet for font awesome and CSS--->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="layout/css/frame_css.css">
-
-<!---CSS fonts with external links--->
-<style>
-/* header part of which 
-background is a pic in assets/img */
-.header
-{
-    padding: 30px;
-    text-align: center;
-    background: url("assets/img/galaxy.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-/* Change block color*/
-a.active {
-  color: white;
-  background-color: #04AA6D;
-}
-
-/* table css*/
-table.center
-{
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/*Art Letter Font*/
-@font-face
-{
-    font-family: rochregu;
-    src: url("layout/font/roch_regu.ttf");
-}
-
-@font-face
-{
-    font-family: arivio;
-    src: url("layout/font/AriVio.ttf");
-}
-
-.arthead
-{
-    font-family: rochregu;
-    color: white;
-}
-
-.artintro
-{
-    font-family: arivio;
-}
-</style>
+  <title>Jiajie Lu | Personal Homepage</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  
+  <style>
+  
+  @font-face
+  {
+	font-family: arivio;
+	src: url("assets/webfonts/AriVio.ttf");
+  }
+  
+  .artintro
+  {
+	font-family: arivio;
+  }
+  </style>
 </head>
 
-<body>
-<!---Head part--->
-<div class="header">
-    <!---Art Letter header--->
-    <div>
-        <h1 class="arthead">Wait & Hope</h1>
-    </div>
-</div>
-<!---Navi Bar Horizon--->
-<div class="topnav">
-    <a class="active">Home</a>
-    <a href="assets/files/JiajieLu_resume.pdf" style="float:right" target="_blank">CV</a>
-    <a href="#" style="float:right">Files</a>
-</div>
-<!--- Container for columns--->
-<div class="row">
-    <!---Container for left columns--->
-    <div class="leftcolumn">
-        <!--- Cards in left column--->
-        <div class="card">
-<!--- Self Introduction Part --->
-<p id="aboutme"></p>
-<h1>About Me</h1>
-<hr style="width:100%;" align = "left"/> 
-<p> <font size = "4.5">
-I am currently a PhD student at Stevens Institute of Technology. My interested fields are mathematical statistics, stochastic optimization, stochastic ordering and data science.
-</font></p>
+<body class="is-preload">
 
-<p id="education"></p>
-<h1>Education</h1>
-<hr style="width:100%;" align = "left"/> 
-<table style="width:100%">
-    <tr>
-        <td>
-            <img src = "assets/img/stevens.png", width = 100px height = 100px style = "float:left"/>
-            <div style = "float:left">
-            <font size = "1"><br/></font><font size = "5" face = "Times New Roman">&ensp;
-                Stevens Institute of Technology, New Jersey, US<br/></font> 
-            <font size = "4.5">&ensp;&ensp;August 2021 - present<br/>&ensp;&ensp;PhD. in Applied Mathematics</font></div>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <img src = "assets/img/stevens.png", width = 100px height = 100px style = "float:left"/>
-            <div style = "float:left">
-            <font size = "1"><br/></font><font size = "5" face = "Times New Roman">&ensp;
-                Stevens Institute of Technology, New Jersey, US<br/></font> 
-            <font size = "4.5">&ensp;&ensp;August 2019 - May 2021<br/>&ensp;&ensp;M.S. in Applied Mathematics</font></div>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <img src = "assets/img/shnu.png", width = 100px height = 100px style = "float:left"/>
-            <div style = "float:left">
-            <font size = "1"><br/></font><font size = "5" face = "Times New Roman">&ensp;
-                Shanghai Normal University, Shanghai, China<br/></font> 
-            <font size = "4.5">&ensp;&ensp;September 2014 - June 2018<br/>&ensp;&ensp;B.S. in Statistics</font></div>
-        </td>
-    </tr>
-</table>
+<!-- Header -->
+<header id="header">
+  <div class="inner">
+    <a href="#" class="image avatar"><img src="images/selfie.jpg" alt="Jiajie Lu" /></a>
+    <h1><strong>I'm Jiajie,</strong><br />
+    an active researcher, a silent critic, and an optimistic dayDreamer~<br />
+    </h1>
+  </div>
+  
+  <div>
+	<p class="artintro">“All human wisdom is summed up in two words: wait and hope.”</p>
+  </div>
+  
+  <div>
+  <ul class="icons">
+	  <li><a href="https://www.linkedin.com/in/jiajie-lu-012ab3206" class="icon brands fa-linkedin" target="_blank" rel="noopener noreferrer">
+	  <span class="label">LinkedIn</span></a></li>
+      <li><a href="https://github.com/ranpo0908" class="icon brands fa-github" target="_blank" rel="noopener noreferrer">
+	  <span class="label">Github</span></a></li>
+      <li><a href="mailto:leolu19950908@gmail.com" class="icon solid fa-envelope" target="_blank" rel="noopener noreferrer">
+	  <span class="label">Email</span></a></li>
+    </ul>
+  </div>
+</header>
 
-<p id="skill"></p>
-<h1>Skills</h1>
-<hr style="width:100%;" align = "left"/> 
-<p> <font size = "4.5">Waiting for updated.</font></p>
+<!-- Main -->
+<div id="main">
 
-<p id="project"></p>
-<h1>Projects</h1>
-<hr style="width:100%;" align = "left"/> 
-<p> <font size = "4.5">Waiting for updated.</font></p>
-<!---End of Self Intro--->
-        </div>
+  <!-- About -->
+  <section id="about">
+    <header class="major">
+      <h2>About Me</h2>
+    </header>
+    <p>Hey there! My name is <a href="assets/files/Resume_Jiajie_Lu.pdf" target="_blank" rel="noopener noreferrer">Jiajie Lu</a>. I'm currently a PhD student in Applied Math at Stevens Institute of Technology.
+	My research interests are mathematical statistics, reliability theory, stochastic orders, supervised by 
+	<a href="https://scholar.google.com/citations?user=g9PtNfsAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">
+	Dr. Xiaohu Li.</a> 
+	I'm also working on the stochastic optimization and risk management with 
+	<a href="https://scholar.google.com/citations?user=IhRZC3wAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">
+	Dr. Darinka Dentcheva</a>. 
+	</p>
+  </section>
+
+  <!-- Education -->
+  <section id="education">
+    <h2>Education</h2>
+    <div class="row">
+      <article class="col-6 col-12-xsmall work-item">
+        <h3>PhD in Applied Mathematics</h3>
+        <p>Stevens Institute of Technology<br>Aug 2021 – Present</p>
+      </article>
+      <article class="col-6 col-12-xsmall work-item">
+        <h3>M.S. in Applied Mathematics</h3>
+        <p>Stevens Institute of Technology<br>Aug 2019 – May 2021</p>
+      </article>
+      <article class="col-6 col-12-xsmall work-item">
+        <h3>B.S. in Statistics</h3>
+        <p>Shanghai Normal University<br>Sep 2014 – Jun 2018</p>
+      </article>
     </div>
-    <!--- Container for right columns --->
-    <div class="rightcolumn">
-        <!--- Card1:Selfie in right column--->
-        <div class="card">
-<!---Starting of SelfIntro--->
-            <table class="center">
-            <tr>
-                <th colspan="3">
-                    <img src="assets/img/selfie2.jpg", alt="Avatar" width="150" height="150">
-                </th>
-            </tr>
-            <tr>
-                <th colspan="3"><h2>Jiajie Lu</h2></th>
-            </tr>
-            <tr>
-                <th>
-                    <a href="https://www.linkedin.com/in/jiajie-lu-012ab3206">
-                        <i class="fa fa-linkedin fa-lg"></i>
-                    </a>
-                </th>
-                <th>
-                    <a href="https://github.com/ranpo0908">
-                        <i class="fa fa-github-square fa-lg"></i>
-                    </a>
-                </th>
-                <th>
-                    <a href="https://twitter.com/Ranpo_Loo">
-                        <i class="fa fa-twitter-square fa-lg"></i>
-                    </a>
-                </th>
-            </tr>
-            <tr>
-                <th colspan="3">
-                    <p class="artintro">Present Student - Future Scientist</p>
-                </th>
-            </tr>
-            </table>
-<!---Ending of SelfIntro--->
-        </div>
-        <!--- Card2: Position Anchor in right column--->
-        <div class="card">
-<!---Starting of Position Anchor--->
-<ul>
-    <li><a href="#aboutme"><i class="fa fa-anchor"></i>&ensp; About me</a></li>
-    <li><a href="#education"><i class="fa fa-anchor"></i>&ensp; Education</a></li>
-    <li><a href="#skill"><i class="fa fa-anchor"></i>&ensp; Skill</a></li>
-    <li><a href="#project"><i class="fa fa-anchor"></i>&ensp; Project</a></li>
-</ul>
-<!---Ending of Position Anchor--->
-        </div>
-        <!---Card3: Contact me --->
-        <div class="card">
-<!---Starting of Contact me--->
-            <h3 class="center">Contact Me</h3>
-            <table class="center">
-                <tr>
-                    <th><i class="fa fa-map-marker"></i></th>
-                    <td>&ensp; Hoboken, NJ, US</td>
-                </tr>
-                <tr>
-                    <th><i class="fa fa-envelope"></i></th>
-                    <td>&ensp; leolu19950908@gmail.com</td>
-                </tr>
-                <tr>
-                    <th><i class="fa fa-paper-plane"></i></th>
-                    <td>&ensp; jlu26@stevens.edu</td>
-                </tr>
-            </table>
-<!---Ending of Contact me--->
-        </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Python, R</li>
+      <li>LaTeX, Git</li>
+      <li>Statistical Inference, Optimization</li>
+    </ul>
+  </section>
+  
+  <section id="publications">
+  <h2>Recent Work</h2>
+  <ol class="pub-list">
+    <li>
+      <span class="pub-title">
+        <strong>Stochastic arrangement increasing property of skew-normal distributions</strong>
+      </span><br>
+      <span class="pub-authors">
+        Jiajie Lu, Xiaohu Li
+      </span><br>
+      <span class="pub-venue">
+        Journal of Multivariate Analysis, 2026 (accepted)
+      </span><br>
+      <span class="pub-links">
+        <a href="https://www.sciencedirect.com/science/article/pii/S0047259X25001393" target="_blank" rel="noopener">Link</a>
+      </span>
+    </li>
+
+    <!-- Add more papers as more <li> blocks -->
+  </ol>
+</section>
+
+
+  <!-- Projects -->
+  <!--
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="row">
+      <article class="col-6 col-12-xsmall work-item">
+        <a href="#" class="image fit thumb"><img src="images/thumbs/project1.jpg" alt="Project 1" /></a>
+        <h3>Dependence Structure in Video Frame Alignment</h3>
+        <p>Using Archimedean copulas to align raw and modified videos while preserving scene structures.</p>
+      </article>
+      <article class="col-6 col-12-xsmall work-item">
+        <a href="#" class="image fit thumb"><img src="images/thumbs/project2.jpg" alt="Project 2" /></a>
+        <h3>Stochastic Process Modeling</h3>
+        <p>Development of SDE-based models for dynamic system resilience under uncertainty.</p>
+      </article>
     </div>
+  </section>
+  -->
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Get In Touch</h2>
+    <p>If you are interested in my research or potential collaboration, feel free to reach out.</p>
+    <div class="row">
+      <div class="col-8 col-12-small">
+        <ul>
+          <li>Email: <a href="mailto:leolu19950908@gmail.com">leolu19950908@gmail.com</a></li>
+          <li>Email: <a href="mailto:jlu26@stevens.edu">jlu26@stevens.edu</a></li>
+          <li>GitHub: <a href="https://github.com/ranpo0908" target="_blank">ranpo0908</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
 </div>
 
+<!-- Footer -->
+<footer id="footer">
+  <div class="inner">
+    <ul class="copyright">
+      <li>&copy; 2025 Jiajie Lu</li><li>Design adapted from <a href="http://html5up.net">HTML5 UP</a></li>
+    </ul>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.poptrox.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
 
 </body>
-
 </html>
