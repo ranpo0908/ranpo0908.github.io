@@ -1,10 +1,29 @@
 [
   {
+    "title": "Resilience analysis of four-state engineering systems under the framework of continuous-time Markov chain model",
+    "authors": "Xiaohu Li, Xiaonan Yang, Jiajie Lu",
+    "venue": "Reliability Engineering & System Safety",
+    "year": 2026,
+    "doi": "10.1016/j.ress.2026.112369",
+    "url": "https://doi.org/10.1016/j.ress.2026.112369",
+    "type": "journal-article"
+  },
+  {
     "title": "Stochastic arrangement increasing property of skew-normal distributions",
     "authors": "Jiajie Lu, Xiaohu Li",
     "venue": "Journal of Multivariate Analysis",
     "year": 2026,
     "doi": "10.1016/j.jmva.2025.105544",
-    "url": "https://doi.org/10.1016/j.jmva.2025.105544"
+    "url": "http://dx.doi.org/10.1016/j.jmva.2025.105544",
+    "type": "journal-article"
+  },
+  {
+    "title": "Enhancing Scene Transition Awareness in Video Generation via Post-Training",
+    "authors": "Hanwen Shen, Jiajie Lu, Yupeng Cao, Xiaonan Yang",
+    "venue": "Proceedings of the 14th International Joint Conference on Natural Language Processing and the 4th Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics",
+    "year": 2025,
+    "doi": "10.18653/v1/2025.findings-ijcnlp.41",
+    "url": "http://dx.doi.org/10.18653/v1/2025.findings-ijcnlp.41",
+    "type": "conference-paper"
   }
 ]
