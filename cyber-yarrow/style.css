@@ -1,0 +1,294 @@
+:root {
+  --background: #f7f1e8;
+  --card: #fff9f0;
+  --text: #2b2118;
+  --muted: #7a6b5d;
+  --accent: #8b2e1a;
+  --coin: #c9a44c;
+  --coin-dark: #9f6b35;
+  --line: #2b2118;
+  --shadow: rgba(43, 33, 24, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  background: var(--background);
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  color: var(--text);
+  background: var(--background);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+button {
+  font: inherit;
+}
+
+main {
+  width: min(720px, 100%);
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 32px 20px;
+  display: grid;
+  place-items: center;
+}
+
+.screen {
+  width: 100%;
+  min-height: min(760px, calc(100vh - 64px));
+  padding: clamp(28px, 6vw, 56px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--card);
+  border: 1px solid rgba(43, 33, 24, 0.08);
+  border-radius: 8px;
+  box-shadow: 0 24px 60px var(--shadow);
+}
+
+.home-screen {
+  justify-content: center;
+  text-align: center;
+}
+
+.title {
+  margin: 0 0 22px;
+  font-size: clamp(2.4rem, 8vw, 4rem);
+  line-height: 1.05;
+  font-weight: 650;
+  letter-spacing: 0;
+}
+
+.intro,
+.status,
+.footer {
+  color: var(--muted);
+}
+
+.intro {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.button {
+  min-width: 168px;
+  height: 52px;
+  margin-top: 38px;
+  padding: 0 24px;
+  border: 0;
+  border-radius: 8px;
+  color: #fffaf2;
+  background: var(--accent);
+  cursor: pointer;
+  font-weight: 650;
+  box-shadow: 0 10px 18px rgba(139, 46, 26, 0.16);
+}
+
+.button:disabled {
+  cursor: default;
+  opacity: 0.62;
+  box-shadow: none;
+}
+
+.button.secondary {
+  margin-top: 8px;
+  color: var(--accent);
+  background: transparent;
+  border: 1px solid rgba(139, 46, 26, 0.42);
+  box-shadow: none;
+}
+
+.casting-screen,
+.result-screen {
+  justify-content: flex-start;
+  text-align: center;
+}
+
+.progress {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 620;
+}
+
+.coin-row {
+  width: 100%;
+  min-height: 124px;
+  margin: 42px 0 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
+  perspective: 900px;
+}
+
+.coin {
+  width: 72px;
+  height: 72px;
+  border: 3px solid #886423;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: var(--text);
+  background: var(--coin);
+  box-shadow:
+    inset 0 0 0 6px rgba(255, 245, 199, 0.34),
+    0 12px 22px rgba(43, 33, 24, 0.12);
+  font-size: 1.45rem;
+  font-weight: 700;
+}
+
+.coin.tails {
+  color: #fff9ef;
+  background: var(--coin-dark);
+}
+
+.coin.rolling {
+  animation: coinRoll 0.75s ease-in-out infinite;
+}
+
+.coin:nth-child(2).rolling {
+  animation-delay: 0.08s;
+}
+
+.coin:nth-child(3).rolling {
+  animation-delay: 0.16s;
+}
+
+@keyframes coinRoll {
+  0% {
+    transform: rotateY(0deg) translateY(0);
+  }
+  50% {
+    transform: rotateY(720deg) translateY(-10px);
+  }
+  100% {
+    transform: rotateY(1440deg) translateY(0);
+  }
+}
+
+.status {
+  min-height: 24px;
+  margin: 0 0 22px;
+  font-size: 0.95rem;
+}
+
+.record,
+.hexagram {
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.record {
+  margin-top: 30px;
+}
+
+.line-row {
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.moving-mark {
+  width: 18px;
+  color: var(--accent);
+  font-size: 0.82rem;
+  line-height: 1;
+}
+
+.line {
+  width: 150px;
+  height: 8px;
+  border-radius: 999px;
+}
+
+.line.yang {
+  background: var(--line);
+}
+
+.line.yin {
+  display: flex;
+  justify-content: space-between;
+  background: transparent;
+}
+
+.line.yin span {
+  width: 62px;
+  height: 8px;
+  border-radius: 999px;
+  background: var(--line);
+}
+
+.line.placeholder {
+  height: 1px;
+  background: rgba(43, 33, 24, 0.18);
+}
+
+.result-title {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.hexagram-name {
+  margin: 6px 0 18px;
+  font-size: 1.5rem;
+  font-weight: 650;
+}
+
+.result-block + .result-block {
+  margin-top: 28px;
+}
+
+.explanation {
+  max-width: 480px;
+  margin: 34px 0 4px;
+  font-size: 1.05rem;
+  line-height: 1.65;
+}
+
+.footer {
+  margin: auto 0 0;
+  padding-top: 36px;
+  font-size: 0.86rem;
+}
+
+.desktop-note {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+@media (max-width: 560px) {
+  main {
+    padding: 0;
+  }
+
+  .screen {
+    min-height: 100vh;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .coin-row {
+    gap: 16px;
+  }
+
+  .coin {
+    width: 68px;
+    height: 68px;
+  }
+}
