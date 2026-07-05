@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vocabulary Practice</title>
+  <meta name="description" content="A small static vocabulary practice page that fetches common words and definitions online." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">English practice</p>
+        <h1>Vocabulary Practice</h1>
+        <p class="subtitle">
+          Ten useful English words each time. The page fetches a common-word pool and definitions online,
+          so you do not need to maintain a local vocabulary file.
+        </p>
+      </div>
+
+      <div class="panel">
+        <p class="panel-title">How to use it</p>
+        <p>Read the word, guess the meaning, then reveal the explanation. Keep the words that feel useful.</p>
+      </div>
+    </section>
+
+    <section class="toolbar" aria-label="controls">
+      <button id="new-words-btn" type="button">New 10 words</button>
+      <button id="toggle-details-btn" type="button" aria-pressed="true">Hide explanations</button>
+      <button id="copy-btn" type="button">Copy list</button>
+    </section>
+
+    <section class="meta-row">
+      <p id="word-count">Loading online word pool...</p>
+      <p class="muted">Static page · Online definitions · Tiny fallback</p>
+    </section>
+
+    <section id="status" class="status" aria-live="polite"></section>
+    <section id="word-grid" class="word-grid" aria-live="polite"></section>
+
+    <footer>
+      <p>
+        Word pool: public common-word frequency list. Definitions: Free Dictionary API.
+      </p>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
