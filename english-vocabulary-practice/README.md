@@ -1,4 +1,4 @@
-# Vocabulary Practice — Definition Only
+# English Vocabulary Practice
 
 This version does not use a local `vocab-data.js` file.
 
@@ -19,7 +19,7 @@ This version does not use a local `vocab-data.js` file.
 ## Files
 
 ```text
-vocab-practice-definition-only/
+english-vocabulary-practice/
   index.html
   style.css
   app.js
@@ -32,7 +32,7 @@ Copy this folder into your personal page repository:
 
 ```text
 ranpo0908.github.io/
-  vocab-practice/
+  english-vocabulary-practice/
     index.html
     style.css
     app.js
@@ -41,13 +41,13 @@ ranpo0908.github.io/
 Then visit:
 
 ```text
-https://ranpo0908.github.io/vocab-practice/
+https://ranpo0908.github.io/english-vocabulary-practice/
 ```
 
 ## Local test
 
 ```bash
-cd vocab-practice-definition-only
+cd english-vocabulary-practice
 python -m http.server 8000
 ```
 
