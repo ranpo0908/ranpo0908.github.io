@@ -27,6 +27,15 @@
     "type": "journal-article"
   },
   {
+    "title": "Preconditioned Test-Time Adaptation for Out-of-Distribution Debiasing in Narrative Generation",
+    "authors": "Hanwen Shen, Ting Ying, Jiajie Lu, Shanshan Wang",
+    "venue": "Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    "year": 2026,
+    "doi": "10.18653/v1/2026.acl-long.919",
+    "url": "http://dx.doi.org/10.18653/v1/2026.acl-long.919",
+    "type": "conference-paper"
+  },
+  {
     "title": "Enhancing Scene Transition Awareness in Video Generation via Post-Training",
     "authors": "Hanwen Shen, Jiajie Lu, Yupeng Cao, Xiaonan Yang",
     "venue": "Proceedings of the 14th International Joint Conference on Natural Language Processing and the 4th Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics",
